@@ -1,29 +1,137 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Roboto", "Arial", sans-serif;
-    color: #283136;
-  }
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #283136;
+}
   
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
   
-  .visually-hidden {
-    position: absolute;
-  
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  
-    clip: rect(0 0 0 0);
-  }
-  
-  .container {
-    width: 1160px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*Header*/
+.index-header,
+.inner-header {
+  background-color: #eeeeee;
+}
+
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.main-navigation-item {
+  display: block;
+  padding-right: 48px;
+}
+
+.main-navigation-item:last-child: {
+  padding-right: 0;
+}
+
+.main-navigation a,
+.basket {
+  display: block;
+  padding-bottom: 5px; 
+  color: #000000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  margin-bottom: 14px; 
+}
+
+.main-navigation .navigation-active,
+.basket .navigation-active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-navigation  a:hover,
+.main-navigation  a:focus,
+.basket:hover,
+.basketa:focus {
+  color: #fb565a;
+}
+
+.main-navigation  a:active,
+.basket:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.basket {
+  padding-left: 40px;
+  position: relative;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+}
+
+.inner-title {
+  display: block;
+  text-align: center;
+  padding: 0;
+  padding-top: 70px;
+  padding-bottom: 106px;
+  margin: 0;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
+}
+
+.slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-title {
+  max-width: 550px;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+
