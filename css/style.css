@@ -348,23 +348,18 @@ a {
 
 .portfolio-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.portfolio-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contacts {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat; 
+  background-size: 100% 100%; 
+  min-height: 416px; 
+
 }
-
-
-.portfolio-item a {
-  position: relative;
-
-  width: 218px;
-}
-
